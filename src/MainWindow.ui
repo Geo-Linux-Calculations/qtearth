@@ -14,11 +14,11 @@
    <enum>Qt::NoContextMenu</enum>
   </property>
   <property name="windowTitle">
-   <string>Simple Earth v1.1</string>
+   <string>Qt Simple Earth</string>
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>images/icon.jpg</normaloff>images/icon.jpg</iconset>
+    <normaloff>:/images/icons/icon.jpg</normaloff>:/images/icons/icon.jpg</iconset>
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QHBoxLayout" name="horizontalLayout">

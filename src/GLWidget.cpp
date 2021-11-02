@@ -181,9 +181,9 @@ void GLWidget::initializeGL()
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 {
   QString imagePaths[3];
-  imagePaths[0] = "images/blueMarble.jpg";
-  imagePaths[1] = "images/stars.jpg";
-  imagePaths[2] = "images/atmosphere.png";
+  imagePaths[0] = ":/images/blueMarble.jpg";
+  imagePaths[1] = ":/images/stars.jpg";
+  imagePaths[2] = ":/images/atmosphere.png";
   QImage images[3];
 
   //load earth, stars and atmosphere textures

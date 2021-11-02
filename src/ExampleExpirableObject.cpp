@@ -76,8 +76,8 @@ void ExampleExpirableObject::run()
   //has an exaggerated scale (since model scale is in meters but our world
   //scale is in Km) which makes it easier to find for this test. Use the
   //setScale method for your own models if you want a realistic scale
-  worldObject->loadIcon("images/fixedWingFriend.png");
-  worldObject->loadModel("models/jeep1.3ds");
+  worldObject->loadIcon(":images/icons/fixedWingFriend.png");
+  worldObject->loadModel(":models/jeep1.3ds");
 
   //set expirable flag and initial expiration time
   worldObject->setIsExpirable(true);

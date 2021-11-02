@@ -1,16 +1,18 @@
-<img src="http://www.huesoftllc.com/slider1.jpg" width=400>
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/Geo-Linux-Calculations/qtearth)
+![GitHub Release Date](https://img.shields.io/github/release-date/Geo-Linux-Calculations/qtearth)
+![GitHub repo size](https://img.shields.io/github/repo-size/Geo-Linux-Calculations/qtearth)
+![GitHub all releases](https://img.shields.io/github/downloads/Geo-Linux-Calculations/qtearth/total)
+![GitHub](https://img.shields.io/github/license/Geo-Linux-Calculations/qtearth)
 
+# QtSimpleEarth
 
-SimpleEarth
-=========
+![about](images/splash.jpg)
 
-[SimpleEarth][1] is a simplistic multi-platform virtual globe. It works on Windows, Linux and OS X. SimpleEarth is Fast, Free and super Easy to use.
-
+[QtSimpleEarth][1] is a simplistic multi-platform virtual globe. It works on Windows, Linux and OS X. QtSimpleEarth is Fast, Free and super Easy to use.
 
 ### Build and run SimpleEarth ###
 
 [See Installation Instructions][2]
-
 
 Main features
 -------------
@@ -21,38 +23,35 @@ Main features
    * Supports satellite imagery
    * Supports 3D model loading
 
-
 Build Requirements
 ------------------
 
 * Qt5 or Qt4 (MinGW under Windows)
 * Other optional libraries if using extra features [See Installation Instructions][2]
 
-
 Runtime Requirements
 --------------------
   * Graphics card with OpenGL support
-
 
 Hello World
 -----------
 
 To start understanding the code and API, look at WorldObject and WorldObjectManager classes and the globals.h header file. The hello world example emplaces a label in the world with the following code:
+```cpp
+//instantiate world object and set label
+WorldObject* worldObject = new WorldObject();
+worldObject->setLabel("Hello World!");
 
-//instantiate world object and set label<br>
-WorldObject* worldObject = new WorldObject();<br>
-worldObject->setLabel("Hello World!");<br>
+//set world object position
+GeodeticPosition position;
+position.latitude = 0.0;  //in decimal degrees
+position.longitude = 0.0;
+position.altitude = 1.0;  //in Km
+worldObject->setGeodeticPosition(position);
 
-//set world object position<br>
-GeodeticPosition position;<br>
-position.latitude = 0.0;  //in decimal degrees<br>
-position.longitude = 0.0;<br>
-position.altitude = 1.0;  //in Km<br>
-worldObject->setGeodeticPosition(position);<br>
-
-//add world object to manager so that it gets rendered<br>
-WorldObjectManager::getInstance()->addWorldObject(worldObject);<br>
-
+//add world object to manager so that it gets rendered
+WorldObjectManager::getInstance()->addWorldObject(worldObject);
+```
 
 Contact us
 ----------

@@ -63,27 +63,27 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
 
   //create tool buttons
   mViewModeToolButton = new QToolButton();
-  mViewModeToolButton->setIcon(QIcon("images/viewMode.png"));
+  mViewModeToolButton->setIcon(QIcon(":/images/icons/viewMode.png"));
   mViewModeToolButton->setCheckable(true);
   mViewModeToolButton->setToolTip("Perspective View");
 
   mLabelToolButton = new QToolButton();
-  mLabelToolButton->setIcon(QIcon("images/label.png"));
+  mLabelToolButton->setIcon(QIcon(":/images/icons/label.png"));
   mLabelToolButton->setCheckable(true);
   mLabelToolButton->setToolTip("Label Tool");
 
   mPathToolButton = new QToolButton();
-  mPathToolButton->setIcon(QIcon("images/path.png"));
+  mPathToolButton->setIcon(QIcon(":/images/icons/path.png"));
   mPathToolButton->setCheckable(true);
   mPathToolButton->setToolTip("Path Tool");
 
   mVolumeToolButton = new QToolButton();
-  mVolumeToolButton->setIcon(QIcon("images/volume.png"));
+  mVolumeToolButton->setIcon(QIcon(":/images/icons/volume.png"));
   mVolumeToolButton->setCheckable(true);
   mVolumeToolButton->setToolTip("Volume Tool");
 
   mMeasuringToolButton = new QToolButton();
-  mMeasuringToolButton->setIcon(QIcon("images/measure.png"));
+  mMeasuringToolButton->setIcon(QIcon(":/images/icons/measure.png"));
   mMeasuringToolButton->setCheckable(true);
   mMeasuringToolButton->setToolTip("Measuring Tool");
 

@@ -11,11 +11,11 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>About Simple Earth</string>
+   <string>About Qt Simple Earth</string>
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>images/icon.jpg</normaloff>images/icon.jpg</iconset>
+    <normaloff>:/images/icons/icon.jpg</normaloff>:/images/icons/icon.jpg</iconset>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
@@ -27,7 +27,7 @@
       </font>
      </property>
      <property name="text">
-      <string>Simple Earth</string>
+      <string>Qt Simple Earth</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -75,7 +75,7 @@
       </font>
      </property>
      <property name="text">
-      <string>The Simple Earth Project</string>
+      <string>The Qt Simple Earth Project</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>

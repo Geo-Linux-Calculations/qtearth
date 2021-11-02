@@ -80,7 +80,7 @@ int main(int argc, char* argv[])
   QApplication app(argc, argv);
 
   //create and show splash screen
-  QSplashScreen splash(QPixmap("images/splash.jpg"));
+  QSplashScreen splash(QPixmap(":/images/splash.jpg"));
   splash.show();
   app.processEvents();
 
